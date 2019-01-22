@@ -105,9 +105,9 @@ To solve this problem, you can apply the REST style to the endpoints, and thanks
 |`/updateAuthor`           |  PUT /authors/:id  
 |`/getBooksAuthors`        |  GET /books/:id/authors
 |`/getNumberOfBooksOnStock`|  GET /books
-|`/addNewImageToBook`      |  POST /books/:id/image
-|`/getBooksImages`         |  GET /books/:id/images
-|`/addCoverImage`          |  POST /books/:id/image(or)cover
+|`/addNewImageToBook`      |  POST /books/:id/cover
+|`/getBooksImages`         |  GET /books/:id/cover
+|`/addCoverImage`          |  POST /books/:id/cover
 |`/listBookCovers`         |  GET  /books/:id/
 
 :id means 'params' object
@@ -121,7 +121,7 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. It i
 Make a `curl` request to _GitHub API_
 
 ```sh
-$ curl https://api.github.com/users/ingvillajimenez
+$ curl https://api.github.com/
 ```
 A way to request information from an API endponint
 
@@ -136,5 +136,5 @@ According to the responded request, answer what does it mean the next parts from
 ###### If response is not showing those parts, ask to google how to print them in console.
 
 ```sh
-# curl https://api.github.com/users/ingvillajimenez --head
+# curl https://api.github.com/ --head
 ```
